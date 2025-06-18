@@ -24,7 +24,7 @@ models = {label: joblib.load(f"{label}_model.pkl") for label in labels}
 sia = SentimentIntensityAnalyzer()
 
 # Set your Gemini API Key
-genai.configure(api_key="AIzaSyDwhanLyM8-AEZUoTqNh0RGGboRCzxt9VI")  
+genai.configure(api_key="YOUR_API_KEY")  
 
 def rephrase_text(offensive_text):
     """Rephrases offensive text to be polite using Google Gemini API"""
